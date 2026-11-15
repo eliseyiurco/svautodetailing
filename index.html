@@ -83,11 +83,6 @@
   .scroll{display:flex;align-items:center;gap:14px}
   .scroll::before{content:"";width:34px;height:1px;background:var(--dim)}
 
-  /* trust strip */
-  .strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(12,17,25,.6)}
-  .strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding-top:22px;padding-bottom:22px}
-  .strip div{font-size:12.5px;color:var(--muted);display:flex;gap:10px;align-items:center}
-  .strip b{white-space:nowrap;color:var(--blue-soft);font-family:var(--display);font-size:18px;font-weight:600}
 
   section{padding:130px 0;border-top:1px solid var(--line)}
   .split{display:grid;grid-template-columns:260px 1fr;gap:60px}
@@ -244,7 +239,6 @@
   @media (max-width:900px){
     .nav-links a:not(.btn){display:none}
     .split,.about-grid,.book,.contact{grid-template-columns:1fr;gap:34px}
-    .strip .wrap{grid-template-columns:1fr 1fr}
     .mono{text-align:left;font-size:90px}
     .step{grid-template-columns:40px 1fr}
     .step p{grid-column:2}
@@ -305,14 +299,6 @@
     </div>
   </section>
 
-  <div class="strip">
-    <div class="wrap">
-      <div><b>12 mo</b> sealant protection on gloss &amp; correction</div>
-      <div><b>3 yr</b> ceramic coating protection</div>
-      <div><b>1 visit</b> combine services in one booking</div>
-      <div><b>Gwinnett</b> drop-off by appointment</div>
-    </div>
-  </div>
 
   <!-- SERVICES (rendered from the SERVICES list in the script) -->
   <section id="services">
