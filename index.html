@@ -552,7 +552,7 @@ function renderMenu() {
     <div class="cat reveal">
       <div class="cat-head"><div class="cat-label">${c.cat}</div></div>
       ${c.items.map(s => {
-        const head = `<h3>${s.name} <span class="tag">${s.hrs} hr</span>${s.badge ? `<span class="badge">${s.badge}</span>` : ""}</h3>
+        const head = `<h3>${s.name} ${s.badge ? `<span class="badge">${s.badge}</span>` : ""}</h3>
           <p>${s.desc}</p><div class="note">${s.note}</div>
           ${s.incl ? `<details><summary>What's included</summary><ul>${s.incl.map(x => `<li>${esc(x)}</li>`).join("")}</ul></details>` : ""}`;
         const bookOne = `<a class="book-one" href="${SQ}/${s.sq}" target="_blank" rel="noopener">Book just this ↗</a>`;
